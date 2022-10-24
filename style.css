@@ -1,0 +1,83 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 2fr ;
+    grid-template-areas:
+     "nav nav nav"
+     "leftsidebar BREAKING:PuppiesAreAddorable rightsidebar"
+     "BoylLikeTurtle Footer Footer "
+
+    ;
+    gap: 5px;
+    border: 1px solid;
+    
+    
+}
+nav{
+    text-align: center;
+    grid-area: nav;
+    border: none;
+}
+
+#leftsidebar{
+    background-color: white;
+    grid-area: StudentLearnsHTML;
+    border: 0.8px solid;
+}
+#leftsidebar{
+    background-color: white;
+    grid-area: Boyliketurtle;
+    border: 0.8px solid;
+}
+main{
+    background-color: white;
+    grid-area: BREAKINGPuppiesAreAddorable;
+    border: 0.8px solid;
+}
+#rightsidebar{
+    background-color: white;
+    grid-area: CSSisApparentlyAThing;
+    border: 0.8px solid;
+}
+#Politics{
+    background-color: yellow;
+    grid-area: Politics;
+}
+#Technology{
+    background-color: deepskyblue;
+    grid-area: Technology;
+}
+#Locals{
+    background-color: magenta;
+    grid-area: Locals;
+}
+#Opinion{
+    background-color: orangered;
+    grid-area: Opinion;
+}
+#Sports{
+    background-color: slateblue;
+    grid-area: Sports;
+}
+footer{
+    border: 0.8px solid;
+    grid-area: Footer;
+}
+@media(max-width:576px)
+{
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.fr 2fr 4fr 3fr 2fr ;
+        grid-template-areas: 
+        "nav"
+        "leftsidebar"
+        "leftsidebar"
+        "main"
+        "rightsidebar"
+        "Footer"
+
+        
+        ;
+    }
+}
