@@ -2,41 +2,42 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 2fr 2fr ;
+    grid-template-rows: 3fr 3fr;
     grid-template-areas:
-     "nav nav nav"
-     "leftsidebar BREAKING:PuppiesAreAddorable rightsidebar"
-     "BoylLikeTurtle Footer Footer "
+     "nav nav nav nav"
+     "leftsidebar main main rightsidebar"
+     "leftsidebar main main footer "
 
     ;
-    gap: 5px;
+    gap: 4px;
     border: 1px solid;
     
-    
+ 
 }
 nav{
     text-align: center;
     grid-area: nav;
     border: none;
+    
 }
 
 #leftsidebar{
-    background-color: white;
     grid-area: StudentLearnsHTML;
     border: 0.8px solid;
+    text-align: center;
 }
 #leftsidebar{
-    background-color: white;
+    text-align: center;
     grid-area: Boyliketurtle;
     border: 0.8px solid;
 }
 main{
-    background-color: white;
+    text-align: center;
     grid-area: BREAKINGPuppiesAreAddorable;
     border: 0.8px solid;
 }
 #rightsidebar{
-    background-color: white;
+    text-align: center;
     grid-area: CSSisApparentlyAThing;
     border: 0.8px solid;
 }
