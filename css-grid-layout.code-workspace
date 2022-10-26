@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../css-grid-layout"
+		},
+		{
+			"path": "../assignment-001-css-grid-layout"
+		},
+		{
+			"path": "../myProfile"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "assignment-002-css-grid-layout-with-media-query",
+		"liveServer.settings.port": 5501
+	}
+}
